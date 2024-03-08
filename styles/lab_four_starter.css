@@ -1,0 +1,243 @@
+/* Global Styles */
+.remove-assignment-content {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Hero Banner */
+  .hero-container {
+    background-image: url('/Assets/wes-tindel-XtVl8IL-8EI-unsplash.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 300px 0;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  
+  .hero-content .btn {
+    background-color: #110401;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .hero-content .btn:hover {
+    background-color: #ff6e3c;
+  }
+  
+  /* Content Containers */
+  .content-container,
+  .accordion-container {
+    background-color: #020000;
+    height: 780px;
+  }
+  
+  .footer-container {
+    background-color: #f2efea;
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  
+  /* Accordion */
+  .accordion-container {
+    background-color: #f3f3f3;
+    padding: 50px 0;
+  }
+  
+  .accordion {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    margin-bottom: 20px;
+  }
+  
+  .accordion-btn {
+    background-color: #dddddd;
+    color: #333333;
+    padding: 15px 20px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .accordion-btn:hover {
+    background-color: #cccccc;
+  }
+  
+  .accordion-content {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: none;
+  }
+  
+  .accordion-content p {
+    font-size: 1.1em;
+  }
+  
+  /* Plus-Minus Icon */
+  .accordion-btn::after {
+    content: '\002B'; /* Plus sign */
+    float: right;
+  }
+  
+  .accordion-btn.active::after {
+    content: '\2212'; /* Minus sign */
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: black;
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .footer-content {
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Align items to each end */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add padding to the footer content */
+  }
+  
+  .footer-left {
+    flex: 1;
+  }
+  
+  .footer-right {
+    display: flex; /* Use flexbox for social icons */
+    justify-content: flex-end; /* Align social icons to the right */
+    align-items: center; /* Center vertically */
+  }
+  
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for social icons */
+  }
+  
+  .social-icons li {
+    margin-right: 10px; /* Adjust spacing between icons */
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+  }
+  
+  .footer a {
+    color: white;
+  }
+  
+  /* Adjust margin and padding of footer container */
+  .footer-container {
+    margin-top: 300px; /* Negative margin to pull footer up */
+    padding-bottom: 20px; /* Add padding to bottom of footer container */
+  }
+  
+  /* Image Styles */
+  .small-image {
+    width: 250px; /* Adjust this value to resize the image as needed */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  /* Content and Button Alignment */
+  .content {
+    color: white; /* Change the text color to white */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-gap: 20px; /* Gap between columns */
+  }
+  
+  .text,
+  .image {
+    grid-column: 1 / -1; /* Span across all columns */
+    text-align: center; /* Center align text */
+  }
+  
+  .btn {
+    display: inline-block; /* Change display to inline-block */
+    background-color: white;
+    border: 2px solid white;
+    color: black; /* Change button text color */
+    padding: 10px 20px; /* Adjust button padding */
+    border-radius: 30px; /* Make the button circular */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px; /* Adjust the margin between text and button */
+    width: auto; /* Set width to auto */
+  }
+  
+  .btn:hover {
+    background-color: transparent;
+    color: white; /* Change button text color on hover */
+  }
+  
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between icons */
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+  }
+  
+  /* Media Queries */
+  
+  /* Desktop */
+  @media (min-width: 992px) {
+    /* Add styles specific to desktop */
+  }
+  
+  /* Tablet */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Add styles specific to tablets */
+  }
+  
+  /* Laptop */
+  @media (min-width: 576px) and (max-width: 767px) {
+    /* Add styles specific to laptops */
+  }
+  
+  /* Phone */
+  @media (max-width: 575px) {
+    .content {
+      grid-template-columns: 1fr; /* Change to single column */
+    }
+  
+    .small-image {
+      margin-bottom: 10px; /* Add margin between text and image */
+    }
+  }
